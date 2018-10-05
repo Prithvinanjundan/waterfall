@@ -1,0 +1,102 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+<script>
+	$(document).ready(function(){
+		$("#b").click(function()
+		{
+		$("#wh").slideDown(5000);
+		$("#wf").fadeToggle();
+		$("#z1").slideUp(5000);
+		$("#wf").animate({'opacity':'0'});
+		setTimeout(
+		function()
+		{
+		alert("water is filled")},5000);
+	});
+	});	
+</script>
+<style>
+#water{
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	border: 2px solid black;
+	}
+#wh{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	display: none;
+	top: 10px;
+	left: 10px;
+	position: absolute;
+    border: 2px solid black;
+}	
+#t1{
+	width: 80px;
+	height: 10px;
+	background-color: brown;
+	top: 95px;
+	left: 113px;
+	position: absolute;
+}
+#t2{
+	width: 10px;
+	height: 30px;
+	background-color: brown;
+	top: 90px;
+	left: 190px;
+	position: absolute;
+}
+#z{
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+	top: 135px;
+	left: 170px;
+	position: absolute;
+	border: 2px solid black;	
+}
+#z1{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	top: 135px;
+	left: 170px;
+	position: absolute;
+	border: 2px solid black;	
+}
+#b{
+	width: 15px;
+	height: 7px;
+	background-color: yellow;
+	top: 85px;
+	left: 188px;
+	position: absolute;
+}
+#wf{
+	width: 10px;
+	height: 80px;
+	background-color: skyblue;
+	display: none;
+	top:120px;
+	left:190px;
+	position: absolute;
+}
+</style>
+</head>
+<body>
+<div id="water"></div>
+<div id="wh"></div>
+<button id="b"></button>
+<div id="t1"></div>
+<div id="t2"></div>
+<div id="wf"></div>
+<div id="z"></div>	
+<div id="z1"></div>
+</body>
+</html>
